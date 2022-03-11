@@ -12,9 +12,11 @@ window.addEventListener("load", async () => {
             userVisibleOnly: true,
             applicationServerKey: 'BIAqq0xpax06YIomiGEy0Za4F_tUcZo17vRLG-R_lw6JhCKZCs2rRW04ruOG-WeM4bjAzqQ-BxfFAKnPtpU-myE'
         });
+        
+          console.log(clientID);
+
+          console.log(JSON.stringify(clientID));
     });
 
-    console.log(clientID);
-
-    console.log(JSON.stringify(clientID));
+  
 });

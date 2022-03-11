@@ -10,11 +10,13 @@ window.addEventListener("load", async () => {
         const serverWorker = await navigator.serviceWorker.ready;
         const clientID = await serverWorker.pushManager.subscribe({
             userVisibleOnly: true,
-            applicationServerKey: 'BIAqq0xpax06YIomiGEy0Za4F_tUcZo17vRLG-R_lw6JhCKZCs2rRW04ruOG-WeM4bjAzqQ-BxfFAKnPtpU-myE'
+            applicationServerKey: "BIAqq0xpax06YIomiGEy0Za4F_tUcZo17vRLG-R_lw6JhCKZCs2rRW04ruOG-WeM4bjAzqQ-BxfFAKnPtpU-myE"
         });
+
+        console.log(clientID);
+
+        console.log(JSON.stringify(clientID));
     });
 
-    console.log(clientID);
-
-    console.log(JSON.stringify(clientID));
+   
 });

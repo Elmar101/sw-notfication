@@ -1,4 +1,5 @@
 self.addEventListener("push",(event)=>{
+    console.log(event);
     const config = {
         body: "Messaj icheriyi burda yazilir...!",
         data: {

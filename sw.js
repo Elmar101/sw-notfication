@@ -1,7 +1,7 @@
 self.addEventListener("push",(event)=>{
     console.log(event);
     const config = {
-        body: "Messaj icheriyi burda yazilir...!",
+        body: e.data.text() || "Messaj icheriyi burda yazilir...!",
         data: {
             dateOfArrival: Date.now(),
             primaryKey: "4"

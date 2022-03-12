@@ -1,5 +1,5 @@
 self.addEventListener("push",(event)=>{
-    console.log(event.data.text() );
+    console.log(event );
     const config = {
         body: event.data.text() || "Messaj icheriyi burda yazilir...!",
         data: {
